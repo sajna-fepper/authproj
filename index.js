@@ -18,12 +18,13 @@ app.use(cookieParser())
 
 const userRouter = require('./routes/userroutes')
 const twilioRouter = require('./routes/phoneauthroutes')
-
+const msgRouter = require('./routes/msgroutes')
 
 
 
 app.use('/api', userRouter)
 app.use('/api', twilioRouter);
+app.use('/api', msgRouter);
 
 
 app.get('/', (req, res) => {

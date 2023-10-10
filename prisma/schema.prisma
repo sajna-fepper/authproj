@@ -25,3 +25,10 @@ model Userphone {
   authCode   String
 }
 
+model Userotp {
+    id  Int     @id @default(autoincrement())
+    phone_number String  @db.VarChar(20)
+    otp String @db.VarChar(6) 
+    otp_expires_at DateTime @db.Timestamp()
+
+}
