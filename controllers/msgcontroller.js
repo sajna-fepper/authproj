@@ -6,6 +6,7 @@ const {msg91} = process.env
 
 
 
+
 // Generate and send OTP
 exports.send_otp = async (req, res, next) => { 
     const phoneNumber = req.body.phone_number;
